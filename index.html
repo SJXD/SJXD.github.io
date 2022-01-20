@@ -16,26 +16,12 @@
 				(function() {
 					var configuration = {
 					"token": "f96eb7cc9d6a6f4c9333cc616bcbdd83",
-					"domains": [
-						"iknowallaboutgames.blogspot.com"
+					"excludeDomains": [
+						"sjxd.github.io/index.html"
 					],
 					"capping": {
 						"limit": 5,
 						"timeout": 24
-					},
-					"entryScript": {
-						"type": "timeout",
-						"timeout": 3000,
-						"capping": {
-							"limit": 5,
-							"timeout": 24
-						}
-					},
-					"exitScript": {
-						"enabled": true
-					},
-					"popUnder": {
-						"enabled": true
 					}
 				};
 					var script = document.createElement('script');
