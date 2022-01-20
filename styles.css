@@ -1,219 +1,247 @@
-		button 	{
-			background: rgb(0, 97, 97);
+		button {
+			border: 0;
+			border-radius: 4px;
+			box-sizing: border-box;
+			color: var(--primary-button-text-color);
+			cursor: pointer;
+			float: right;
+			font-size: .875em;
+			margin: 0;
+			padding: 8px 16px;
+			transition: box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1);
+			user-select: none;
+		}
+		
+		.hidden {
+			display: none;
+		}
+
+		body {
+			font-family: "Menlo", monospace;
+			background: rgb(0, 48, 63);
+			background-size: 100%;
+			background-image: url('./images/bird_with_text_solomon.png');
+			background-repeat: repeat-y;
 			color: white;
-			border-style: none;
-			border-radius: 15%;
-	    }
-			body {
-				font-family: Georgia, 'Times New Roman', Times, serif;
-				background: rgb(0, 48, 63);
-				background-image: url('../images/bg.png');
-				background-size: 100%;
-				background-repeat: no-repeat;
-				color: white;
-			}
+		}
 
-			header {
-				background-color : salmon;
-				background-size: 100%;
-				background-position: center;
-				background: black;
-				padding: 20px;
-				height:100px;
-				text-align: center;
-			}
+		header {
+			font-family: "Menlo", monospace;
+			size: 40px;
+			background-size: 100%;
+			background-position: center;
+			background-repeat: inherit;
+			text-align: center;
+			padding: 30px 10px;
+		}
 
-			.topnav {
-				list-style: none;
-				font-family: 'Roboto Thin';
-				color: aliceblue;
-				margin: 50px 0 0 0;
-				text-align: right;
-			}
+		.topnav:hover {
+			color: salmon;
+		}
+
+		.topnav {
+			size: 40px;
+			list-style: none;
+			font-family: "Menlo", monospace;
+			color: aliceblue;
+			margin: 50px 0 0 0;
+			text-align: right;
+		}
 
 
-			.Contact {
-				color: gray;
-				background-position: center;
-				background-size: 100%;
-				padding: 3% 20%;
-				display: flex;
-				flex-direction: row;
-				top: -90px;
-				text-align: center;
-			}
+		.Contact {
+			color: seashell;
+			position: center;
+			background-position: center;
+			background-size: 100%;
+			padding: 3% 20%;
+			display: flex;
+			flex-direction: row;
+			top: -90px;
+			text-align: center;
+		}
 
-			.Emptext {
-				color: gray;
-				background-position: center;
-				background-size: 100%;
-				padding: 3% 20%;
-				display: flex;
-				flex-direction: row;
-				top: -90px;
-				text-align: center;
-				size: 24px;
-			}
-
-
-			.Contact figure {
-				margin: auto;
-				text-align: center;
-				text-transform: initial;
-				width: 200px;
-			}
-			
-
-			.Contact img {
-				border-radius: 50%;
-				width: 40px;
-				height: 40px;
-				position: center;
-			}
-
-			.AboutGames {
-				color: gray;
-				background-position: center;
-				background-size: 100%;
-				padding: 3% 20%;
-				display: flex;
-				flex-direction: column;
-				top: -90px;
-				text-align: center;
-			}
-
-			.AboutGames figure img {
-				border-radius: 50%;
-				width: 150px;
-				height: 150px;
-			}
+		.Emptext {
+			color: gray;
+			background-position: center;
+			background-size: 100%;
+			padding: 3% 20%;
+			display: flex;
+			flex-direction: row;
+			top: -90px;
+			text-align: center;
+			size: 24px;
+		}
 
 
-			.feat {
-				background: rgb(0, 0, 0);
-				color: lightblue;
-				padding: 20px;
-				display: flex;
-				flex-direction: column;
-				text-align: center;
-				height: 150px;
-				padding: 50;
-			}
+		.Contact figure {
+			margin: auto;
+			text-align: center;
+			text-transform: initial;
+			width: 200px;
+		}
+		
 
-			.features {
-				background-size: 100%;
-				color: rgb(0, 0, 0);
-				padding: 20px;
-				display: flex;
-				flex-direction: row;
-			}
+		.Contact img {
+			border-radius: 50%;
+			width: 40px;
+			height: 40px;
+			position: center;
+		}
 
-			.features figure {
-				margin: auto;
-				text-align: center;
-				text-transform: initial;
-				width: 200px;
-			}
+		.AboutGames {
+			color: gray;
+			background-position: center;
+			background-size: 100%;
+			padding: 3% 20%;
+			display: flex;
+			flex-direction: column;
+			top: -90px;
+			text-align: center;
+		}
 
-			.features figure img {
-				text-align: center;
-				border-radius: 50%;
-				width: 150px;
-				height: 150px;
-			}
-
-			figure img:hover {
-				filter: brightness(0.7);
-			}
-
-			ul {
-				margin:0;
-				padding: 0;
-				list-style-type: none;
-				color: black;
-			}
+		.AboutGames figure img {
+			border-radius: 50%;
+			width: 150px;
+			height: 150px;
+		}
 
 
-			li {
-				display: inline-block;
-				margin-right: 20px;
-			}
+		.feat {
+			background: rgb(0, 0, 0);
+			color: lightblue;
+			padding: 20px;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			height: 150px;
+			padding: 50;
+		}
 
-			a {
-				text-decoration: none;
-			}
-			
+		.features {
+			background-size: 100%;
+			color: seashell;
+			padding: 20px;
+			display: flex;
+			flex-direction: row;
+			top: -90px;
+			text-align: center
+		}
+
+		.features figure {
+			margin: auto;
+			text-align: center;
+			text-transform: initial;
+			width: 200px;
+		}
+
+		.features figure img {
+			text-align: center;
+			border-radius: 50%;
+			width: 150px;
+			height: 150px;
+		}
+
+		figure img:hover {
+			filter: brightness(0.7);
+		}
+
+		ul {
+			margin:0;
+			padding: 0;
+			list-style-type: none;
+			color: black;
+		}
 
 
-			.Ab_Me_GP {
-				background-size: 100%;
-				color: lightsalmon;
-				padding: 20px;
-				display: flex;
-				flex-direction: column;
-				text-align: center;
-			}
+		li {
+			size: 100px;
+			display: inline-block;
+			margin: 30px;
+		}
 
-			.Ab_Me_GP figure {
-				margin: auto;
-				text-align: center;
-				text-transform: initial;
-				width: 200px;
-				color: gray;
-			}
+		a {
+			text-decoration: none;
+		}
+		
 
-			.Ab_Me_GP figure img {
-				border-radius: 50%;
-				width: 150px;
-				height: 150px;
-				text-align: center;
-			}
 
-			.Intro {
-				background: black;
-				text-align: center;
-				padding-top: 5px;
-			}
+		.Ab_Me_GP {
+			background-size: 100%;
+			color: seashell;
+			padding: 20px;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+		}
 
-			header .logo a {
-				background-image: url("Images/solomon logo.png");
-				background-size: 90px;
-				background-repeat: no-repeat;
-				display: inline-block;
-				height: 100px;
-				width: 100px;
-				text-indent: -9999999px;
-				position: center;
-				top: -15px;
-			}
-			
+		.Ab_Me_GP figure {
+			margin: auto;
+			text-align: center;
+			text-transform: initial;
+			width: 200px;
+			color: gray;
+		}
 
-			a:hover {
-				color: #ff7a7a;
-				text-transform: capitalize;
-			}
+		.Ab_Me_GP figure img {
+			border-radius: 50%;
+			width: 150px;
+			height: 150px;
+			text-align: center;
+		}
 
-			footer {
-				background: black;
-				padding: 10px 20px;
-				text-decoration: wavy;
-				font-family: 'Roboto Thin';
-				text-align: center;
-				background-attachment: scroll;
-				background-position: 0% 0%;
-				position: fixed;
-				bottom: 0pt;
-			}
-			h1 {
-				color: rgb(0, 183, 255);
-			}
-			h2 {
-				color: darksalmon;
-				text-align: center;
-				padding: 30px 10px;
-			}
-			h3 {
-				color: gray;
-				text-align: center;
-			}
+		.Intro {
+			color: seashell;
+			text-align: center;
+			padding-top: 5px;
+		}
 
+		header .logo a {
+			background-size: 90px;
+			background-repeat: no-repeat;
+			display: inline-block;
+			height: 50px;
+			width: 100px;
+			position: center;
+			top: 0px;
+		}
+		
+
+		a:hover {
+			color: #ff7a7a;
+			text-transform: capitalize;
+		}
+
+		footer {
+			background: black;
+			padding: 10px 20px;
+			text-decoration: wavy;
+			font-family: 'Roboto Thin';
+			text-align: center;
+			background-attachment: scroll;
+			background-position: 0% 0%;
+			position: fixed;
+			bottom: 0pt;
+		}
+		h1 {
+			color: rgb(0, 183, 255);
+		}
+		h2 {
+			color: seashell;
+			text-align: center;
+			padding: 30px 10px;
+		}
+		h3 {
+			color: seashell;
+			text-align: center;
+		}
+
+		h3:hover {
+			color: grey;
+			text-decoration: underline;
+		}
+
+		.about {
+			text-align: center;
+			color: seashell;
+		}
